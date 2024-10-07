@@ -1,0 +1,117 @@
+/* General container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #c1e1eb); /* Soft gradient background */
+}
+
+/* Form container styling */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+  padding: 30px 20px;
+  width: 350px; /* Slightly wider for better UX */
+  transition: transform 0.3s; /* Animation on hover */
+}
+
+.form-container:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Toggle buttons styling */
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  background-color: transparent;
+  border: 2px solid transparent; /* Border color transition */
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 20px; /* Rounded button corners */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.form-toggle .active {
+  border-color: #007BFF; /* Active button border color */
+  color: #007BFF; /* Active button text color */
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+/* Input styling */
+.form input {
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Rounded input corners */
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form input:focus {
+  border-color: #007BFF; /* Focused input border color */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+  outline: none;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Rounded button corners */
+  padding: 12px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Link styling */
+.form a {
+  color: #007BFF;
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center; /* Center link text */
+  display: block; /* Make link a block element */
+}
+
+.form a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+  .form-container {
+    width: 90%; /* Full width on small screens */
+  }
+}
